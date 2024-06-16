@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>レイアウト</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <div id="header">
+        <div id="video-area">
+            <video id="video" poster="img/sky.png" webkit-playsinline muted autoplay loop>
+                <source src="movie/test.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h1>MeteorMind</h1>
+        <div id = "time">00:00</div>
+        <div id="day_list">
+            <div id="day1" onclick="get_weather(this)"></div>
+            <div id="day2" onclick="get_weather(this)"></div>
+            <div id="day3" onclick="get_weather(this)"></div>
+            <div id="day4" onclick="get_weather(this)"></div>
+            <div id="day5" onclick="get_weather(this)"></div>
+        </div>
+        <div id="border"></div>
+        <div id="view">
+            <div id="day_view">日付を選択してください</div>
+            <div id="weather_view">
+                <div id="weather1">最高気温: -----</div>
+                <div id="weather2">最低気温: -----</div>
+                <div id="weather3">湿度: -----</div>
+                <div id="weather4">前日湿度: -----</div>
+                <div id="weather5">天気: -----</div>
+            </div>
+        </div>
+        <div id="reset">ー説明ー</div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+
+    </main>
+
+    <!-- フッター -->
+    <footer>
+
+    </footer>
+
+    <script src="test.js"></script>
+</body>
+
+</html>
